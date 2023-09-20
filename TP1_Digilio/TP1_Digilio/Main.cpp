@@ -17,16 +17,53 @@ void main()
 	int* aux = numsArray;
 
 	int randNum;
+	int highest = 0;
+	int* highestDir{};
+
+	int value;
+	int position;
 
 	for (int i = 0; i < arraySize; i++)
 	{
-		 int aux = (rand() % 401) + 100;
+		 *aux = (rand() % 401) + 100;
+
+		 cout << endl << "The value located at " << aux << " is: " << *aux;
+
+		 if (*aux > highest)
+		 {
+			 highest = *aux;
+			 highestDir = aux;
+		 }
+
 		 aux++;
 	}
 
+	cout << endl << endl << "The highest value is " << highest << " and its located at " << highestDir << endl;
+
+	cout << endl << "Enter a value to modify: ";
+	cin >> value;
+
+	do
+	{
+		cout << endl << "Enter a position for the value: ";
+		cin >> position;
+
+	} while (position < 0 || position > arraySize - 1);
+
+	aux = numsArray;
+	aux += position - 1;
+
+	*aux = value;
+
+	aux = numsArray;
+
 	for (int i = 0; i < arraySize; i++)
 	{
-		cout << numsArray[i] << endl;
+		cout << endl << "The value located at " << aux << " is: " << *aux;
+		aux++;
 	}
-	//int randDirection = rand() % 4;
+
+	cout << endl << endl;
+	
+	delete[] numsArray;
 }
