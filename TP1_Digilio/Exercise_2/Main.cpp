@@ -3,7 +3,7 @@
 
 using namespace std;
 
-int* GetAddress(int numsArray[], int arraySize, int toFind);
+int* GetAddress(int* numsArray, int arraySize, int toFind);
 
 
 void main()
@@ -53,17 +53,15 @@ void main()
 	
 }
 
-int* GetAddress(int numsArray[], int arraySize, int toFind)
+int* GetAddress(int* numsArray, int arraySize, int toFind)
 {
-	int* iterator = numsArray;
-
 	for (int i = 0; i < arraySize; i++)
 	{
-		if (*iterator == toFind)
+		if (*numsArray == toFind)
 		{
-			return iterator;
+			return numsArray;
 			break;
 		}
-		iterator++;
+		numsArray++;
 	}
 }

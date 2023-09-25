@@ -8,18 +8,23 @@ void main()
 {
 	srand(time(NULL));
 
-	int arraySize;
+
+
+
+	int arraySize{};
+
+
+	cout << "Salida datto original: " << arraySize << endl;
 
 	cout << "Enter the size for the array: ";
 	cin >> arraySize;
 
+
 	int* numsArray = new int[arraySize];
+	
 	int* aux = numsArray;
-
+	int* highestDir = numsArray;
 	int randNum;
-	int highest = 0;
-	int* highestDir{};
-
 	int value;
 	int position;
 
@@ -29,16 +34,16 @@ void main()
 
 		 cout << endl << "The value located at " << aux << " is: " << *aux;
 
-		 if (*aux > highest)
+		 if (*aux > *highestDir)
 		 {
-			 highest = *aux;
 			 highestDir = aux;
 		 }
 
 		 aux++;
 	}
 
-	cout << endl << endl << "The highest value is " << highest << " and its located at " << highestDir << endl;
+
+	cout << endl << endl << "The highest value is " << *highestDir << " and its located at " << highestDir << endl;
 
 	cout << endl << "Enter a value to modify: ";
 	cin >> value;

@@ -1,5 +1,5 @@
 ﻿  Main.cpp
 F:\Facultad\Gestion de memoria\TP1_GesMem_Digilio\TP1_GestMem\TP1_Digilio\TP1_Digilio\Main.cpp(8,1): warning C4326: return type of 'main' should be 'int' instead of 'void'
 F:\Facultad\Gestion de memoria\TP1_GesMem_Digilio\TP1_GestMem\TP1_Digilio\TP1_Digilio\Main.cpp(9,12): warning C4244: 'argument': conversion from 'time_t' to 'unsigned int', possible loss of data
-F:\Facultad\Gestion de memoria\TP1_GesMem_Digilio\TP1_GestMem\TP1_Digilio\TP1_Digilio\Main.cpp(19,6): warning C4101: 'randNum': unreferenced local variable
+F:\Facultad\Gestion de memoria\TP1_GesMem_Digilio\TP1_GestMem\TP1_Digilio\TP1_Digilio\Main.cpp(28,6): warning C4101: 'randNum': unreferenced local variable
   TP1_Digilio.vcxproj -> F:\Facultad\Gestion de memoria\TP1_GesMem_Digilio\TP1_GestMem\TP1_Digilio\Debug\TP1_Digilio.exe

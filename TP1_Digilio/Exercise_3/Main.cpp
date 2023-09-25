@@ -64,11 +64,7 @@ void main()
 
 			cout << endl << endl;
 		}
-
 	}
-
-	
-
 }
 
 void Pluralize(char* aux)
@@ -115,8 +111,7 @@ void Pluralize(char* aux)
 		*aux = 'E';
 		aux++;
 		*aux = 'S';
-	}
-	
+	}	
 
 	for (int i = 0; i < 12; i++)
 	{
